@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <link rel="stylesheet" href="desing.css">
+    <script src="login.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     
+</head>
+<body>
+  <form>
+    <!-- titulo -->
+    <div class="header">
+      <h1 class="title">
+        Rede Bibliotecária
+      </h1>
+    </div>
+    <!-- elemento do bootstrap --> 
+    <div class="col text-center">
+      <div class="form-group pt-4 ">
+        <label for="exampleInputEmail1">Matricula</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="sua matricula">
+        <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar sua matricula, com ninguém.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Senha</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+      </div>
+      <div class="form-group form-check" >
+        <input type="checkbox" class="form-check-input" id="aluno">
+        <label class="form-check-label" for="exampleCheck1">aluno</label>
+        <br>
+        <input type="checkbox" class="form-check-input" id="biblioteca">
+        <label class="form-check-label" for="exampleCheck1">biblioteca</label>
+      </div>
+      <button type="button" class="btn btn-primary" onclick="redirecionar()">Entrar</button>
+    </div>
+  </form>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+function redirecionar() {
+    if (document.getElementById('aluno').checked) {
+        window.location.href = "aluno.html";
+    }  else if (document.getElementById('biblioteca').checked) {
+        window.location.href = "biblioteca.html";
+    } else{
+        alert("Por favor, selecione uma opção.")
+    }
+}
+</script>
+</body>
+</html>

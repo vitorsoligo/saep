@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(13, 230, 49) !important;
+}
+
+.title{
+    font-family: "Oswald", sans-serif;
+    font-size: 4vw;
+    margin-bottom: 2vw;
+    text-align: center;
+}
+
+.form-control{
+    width: 30% !important;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.btn{
+    background-color: rgb(15, 14, 15) !important;
+    border-color: transparent;
+}
